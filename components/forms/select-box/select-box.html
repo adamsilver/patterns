@@ -1,0 +1,13 @@
+<div class="field">
+	<label for="{{name}}">
+		<span class="field-label">{{label}}</span>
+		{{#if hint}}
+			<span class="field-hint">{{hint}}</span>
+		{{/if}}
+	</label>
+	<select id="{{name}}" name="{{name}}">
+		{{#each options}}
+			<option value="{{this.value}}" {{#if this.selected}}selected{{/if}}>{{this.text}}</option>
+		{{/each}}
+	</select>
+</div>
