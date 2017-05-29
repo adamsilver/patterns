@@ -1,0 +1,29 @@
+{
+	"title": "Select box",
+	"context": {
+		"name": "location",
+		"label": "Choose location",
+		"options": [{
+			"text": "United Kingdom",
+			"value": "value",
+			"selected": true
+		}]
+	},
+	"variants": [{
+		"name": "Has hint",
+		"context": {
+			"hint": "Where you spend most days"
+		}
+	},{
+		"name": "Has error",
+		"context": {
+			"error": "Select location"
+		}
+	},{
+		"name": "Has hint and error",
+		"context": {
+			"hint": "Where you spend most days",
+			"error": "Select location"
+		}
+	}]
+}

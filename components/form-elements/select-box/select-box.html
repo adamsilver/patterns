@@ -1,11 +1,14 @@
-<div class="field">
+<div class="field {{#if error}}field-hasError{{/if}}">
 	<label for="{{name}}">
 		<span class="field-label">{{label}}</span>
 		{{#if hint}}
 			<span class="field-hint">{{hint}}</span>
 		{{/if}}
+		{{#if error}}
+			<span class="field-error">{{error}}</span>
+		{{/if}}
 	</label>
-	<select id="{{name}}" name="{{name}}">
+	<select id="{{name}}" name="{{name}}" class="field-selectBox">
 		{{#each options}}
 			<option value="{{this.value}}" {{#if this.selected}}selected{{/if}}>{{this.text}}</option>
 		{{/each}}

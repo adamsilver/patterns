@@ -1,0 +1,24 @@
+{
+	"title": "Text box",
+	"context": {
+		"name": "firstName",
+		"label": "First name"
+	},
+	"variants": [{
+		"name": "Has hint",
+		"context": {
+			"hint": "Just your first name"
+		}
+	},{
+		"name": "Has error",
+		"context": {
+			"error": "Enter your name"
+		}
+	},{
+		"name": "Has hint and error",
+		"context": {
+			"hint": "Just your first name",
+			"error": "Enter your name"
+		}
+	}]
+}

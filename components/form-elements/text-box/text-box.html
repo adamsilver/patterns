@@ -1,0 +1,12 @@
+<div class="field {{#if error}}field-hasError{{/if}}">
+	<label for="{{name}}">
+		<span class="field-label">{{label}}</span>
+		{{#if hint}}
+			<span class="field-hint">{{hint}}</span>
+		{{/if}}
+		{{#if error}}
+			<span class="field-error">{{error}}</span>
+		{{/if}}
+	</label>
+	<input class="field-textBox" type="text" id="{{name}}" name="{{name}}" value="{{value}}">
+</div>
