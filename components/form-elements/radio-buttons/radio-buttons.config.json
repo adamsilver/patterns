@@ -1,0 +1,33 @@
+{
+	"title": "Text box",
+	"context": {
+		"name": "delivery",
+		"legend": "Delivery type",
+		"radioButtons": [{
+			"id": "delivery--0",
+			"value": "standard",
+			"label": "Standard delivery"
+		},{
+			"id": "delivery--1",
+			"value": "next",
+			"label": "Next day"
+		}]
+	},
+	"variants": [{
+		"name": "Has hint",
+		"context": {
+			"hint": "Choose at your convenience"
+		}
+	},{
+		"name": "Has error",
+		"context": {
+			"error": "Choose a delivery type"
+		}
+	},{
+		"name": "Has hint and error",
+		"context": {
+			"hint": "Choose at your convenience",
+			"error": "Choose a delivery type"
+		}
+	}]
+}

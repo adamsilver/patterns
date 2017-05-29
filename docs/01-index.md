@@ -1,5 +1,5 @@
 ---
-title: Patterns
+title: Form Design Patterns
 ---
 
-This is your index page. You can edit its contents at `docs/01-index.hbs`
+This pattern library represents all the reusable patterns and components from the book.

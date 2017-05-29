@@ -13,7 +13,7 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Patterns');
+fractal.set('project.title', 'Form Design Patterns');
 
 /*
  * Tell Fractal where to look for components.

@@ -1,0 +1,21 @@
+<div class="field {{#if error}}field-hasError{{/if}}">
+	<fieldset>
+		<legend>
+			<span class="field-legend">{{legend}}</span>
+			{{#if hint}}
+				<span class="field-hint">{{hint}}</span>
+			{{/if}}
+			{{#if error}}
+				<span class="field-error">{{error}}</span>
+			{{/if}}
+		</legend>
+		{{#each radioButtons}}
+			<div class="field-radioButton">
+				<label for="{{this.id}}">
+					<input type="radio" name="{{../name}}" value="{{this.value}}" id="{{this.id}}">
+					{{this.label}}
+				</label>
+			</div>
+		{{/each}}
+	</fieldset>
+</div>
