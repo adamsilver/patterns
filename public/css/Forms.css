@@ -67,6 +67,47 @@ fieldset {
 }
 
 /**************************************
+* Date
+**************************************/
+
+.field-dayWrapper,
+.field-monthWrapper,
+.field-yearWrapper {
+	display: inline-block;
+}
+
+.field-dayWrapper,
+.field-monthWrapper {
+	width: 4em;
+}
+
+.field-yearWrapper {
+	width: 5em;
+}
+
+
+.field-dayWrapper label,
+.field-monthWrapper label,
+.field-yearWrapper label {
+	display: block;
+}
+
+.field-dayBox,
+.field-monthBox,
+.field-yearBox {
+	-webkit-appearance: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: 1.25;
+    padding: 0.5em;
+    border: 2px solid #222;
+}
+
+/**************************************
 * Group
 **************************************/
 

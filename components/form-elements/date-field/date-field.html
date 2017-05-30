@@ -1,0 +1,25 @@
+<div class="field {{#if error}}field-hasError{{/if}}">
+	<fieldset>
+		<legend>
+			<span class="field-legend">{{legend}}</span>
+			{{#if hint}}
+				<span class="field-hint">{{hint}}</span>
+			{{/if}}
+			{{#if error}}
+				<span class="field-error">{{error}}</span>
+			{{/if}}
+		</legend>
+		<div class="field-dayWrapper">
+			<label for="{{day.name}}">{{day.label}}</label>
+			<input class="field-dayBox" type="number" pattern="[0-9]*" name="{{day.name}}" value="{{day.value}}" id="{{day.name}}" min="0" max="31">
+		</div>
+		<div class="field-monthWrapper">
+			<label for="{{month.name}}">{{month.label}}</label>
+			<input class="field-monthBox" type="number" pattern="[0-9]*" name="{{month.name}}" value="{{month.value}}" id="{{month.name}}" min="0" max="12">
+		</div>
+		<div class="field-yearWrapper">
+			<label for="{{year.name}}">{{year.label}}</label>
+			<input class="field-yearBox" type="number" pattern="[0-9]*" name="{{year.name}}" value="{{year.valye}}" id="{{year.name}}" min="0" max="2050">
+		</div>
+	</fieldset>
+</div>

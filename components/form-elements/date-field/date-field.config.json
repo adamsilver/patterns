@@ -1,0 +1,36 @@
+{
+	"title": "Date field",
+	"context": {
+		"name": "firstName",
+		"legend": "Date of birth",
+		"day": {
+			"label": "Day",
+			"name": "day"
+		},
+		"month": {
+			"label": "Month",
+			"name": "month"
+		},
+		"year": {
+			"label": "Year",
+			"name": "year"
+		}
+	},
+	"variants": [{
+		"name": "Has hint",
+		"context": {
+			"hint": "Enter numbers in format DD MM YYYY"
+		}
+	},{
+		"name": "Has error",
+		"context": {
+			"error": "Enter your date of birth"
+		}
+	},{
+		"name": "Has hint and error",
+		"context": {
+			"hint": "Enter numbers in format DD MM YYYY",
+			"error": "Enter your date of birth"
+		}
+	}]
+}
