@@ -1,0 +1,12 @@
+{
+	"title": "Button",
+	"context": {
+		"text": "button text yay"
+	},
+	"variants": [{
+		"name": "Disabled button",
+		"conext": {
+			"disabled": true
+		}
+	}]
+}

@@ -1,5 +1,5 @@
 {
-	"title": "Text box",
+	"title": "Radio buttons",
 	"context": {
 		"name": "delivery",
 		"legend": "Delivery type",

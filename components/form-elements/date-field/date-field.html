@@ -1,13 +1,13 @@
-<div class="field {{#if error}}field-hasError{{/if}}">
+<div class="field {% if error %}field-hasError{% endif %}">
 	<fieldset>
 		<legend>
 			<span class="field-legend">{{legend}}</span>
-			{{#if hint}}
+			{% if hint %}
 				<span class="field-hint">{{hint}}</span>
-			{{/if}}
-			{{#if error}}
+			{% endif %}
+			{% if error %}
 				<span class="field-error">{{error}}</span>
-			{{/if}}
+			{% endif %}
 		</legend>
 		<div class="field-dayWrapper">
 			<label for="{{day.name}}">{{day.label}}</label>

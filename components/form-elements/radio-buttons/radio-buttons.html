@@ -1,21 +1,21 @@
-<div class="field {{#if error}}field-hasError{{/if}}">
+<div class="field {% if error%}field-hasError{% endif %}"
 	<fieldset>
 		<legend>
 			<span class="field-legend">{{legend}}</span>
-			{{#if hint}}
+			{% if hint %}
 				<span class="field-hint">{{hint}}</span>
-			{{/if}}
-			{{#if error}}
+			{% endif %}
+			{% if error %}
 				<span class="field-error">{{error}}</span>
-			{{/if}}
+			{% endif %}
 		</legend>
-		{{#each radioButtons}}
+		{% for item in radioButtons %}
 			<div class="field-radioButton">
-				<label for="{{this.id}}">
-					<input type="radio" name="{{../name}}" value="{{this.value}}" id="{{this.id}}">
-					{{this.label}}
+				<label for="{{item.id}}">
+					<input type="radio" name="{{name}}" value="{{item.value}}" id="{{item.id}}">
+					{{item.label}}
 				</label>
 			</div>
-		{{/each}}
+		{% endfor %}
 	</fieldset>
 </div>

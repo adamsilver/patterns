@@ -10,15 +10,22 @@ const path = require('path');
  */
 const fractal = module.exports = require('@frctl/fractal').create();
 
+const nunjucks = require('@frctl/nunjucks')();
+
+
 /*
  * Give your project a title.
  */
 fractal.set('project.title', 'Form Design Patterns');
 
+fractal.components.engine(nunjucks);
+
 /*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', path.join(__dirname, 'components'));
+fractal.components.set('path', 'components/');
+
+fractal.components.set('default.collated', false);
 
 /*
  * Tell Fractal where to look for documentation pages.

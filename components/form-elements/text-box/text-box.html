@@ -1,12 +1,14 @@
-<div class="field {{#if error}}field-hasError{{/if}}">
+<div class="field {% if error %}field-hasError{%endif%}">
 	<label for="{{name}}">
 		<span class="field-label">{{label}}</span>
-		{{#if hint}}
+		{% if hint %}
 			<span class="field-hint">{{hint}}</span>
-		{{/if}}
-		{{#if error}}
+		{% endif %}
+		{% if error %}
 			<span class="field-error">{{error}}</span>
-		{{/if}}
+		{% endif %}
 	</label>
 	<input class="field-textBox" type="text" id="{{name}}" name="{{name}}" value="{{value}}">
 </div>
+
+<!-- {% render '@button', {text: 'adam'} %} -->
