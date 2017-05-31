@@ -1,0 +1,21 @@
+<div class="field {% if error%}field-hasError{% endif %}"
+	<fieldset>
+		<legend>
+			<span class="field-legend">{{legend}}</span>
+			{% if hint %}
+				<span class="field-hint">{{hint}}</span>
+			{% endif %}
+			{% if error %}
+				<span class="field-error">{{error}}</span>
+			{% endif %}
+		</legend>
+		{% for item in checkboxes %}
+			<div class="field-checkbox">
+				<label for="{{item.id}}">
+					<input type="checkbox" name="{{name}}" value="{{item.value}}" id="{{item.id}}">
+					{{item.label}}
+				</label>
+			</div>
+		{% endfor %}
+	</fieldset>
+</div>

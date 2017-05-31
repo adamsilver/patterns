@@ -1,0 +1,37 @@
+{
+	"title": "Radio buttons",
+	"context": {
+		"name": "food",
+		"legend": "Delivery type",
+		"checkboxes": [{
+			"id": "food--0",
+			"value": "chocolate",
+			"label": "Chocolate"
+		},{
+			"id": "food--1",
+			"value": "sandwiches",
+			"label": "Sandwiches"
+		},{
+			"id": "food--2",
+			"value": "cookies",
+			"label": "Cookies"
+		}]
+	},
+	"variants": [{
+		"name": "Has hint",
+		"context": {
+			"hint": "When you get mid-morning munchies"
+		}
+	},{
+		"name": "Has error",
+		"context": {
+			"error": "Choose at least one type of food"
+		}
+	},{
+		"name": "Has hint and error",
+		"context": {
+			"hint": "When you get mid-morning munchies",
+			"error": "Choose at least one type of food"
+		}
+	}]
+}

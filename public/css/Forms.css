@@ -1,3 +1,12 @@
+/**************************************
+* General
+**************************************/
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
 .field label,
 .field legend {
 	font-size: 1.1em;
@@ -30,10 +39,18 @@
 	padding-left: 10px;
 }
 
+/**************************************
+* Select box
+**************************************/
+
 .field-selectBox {
 	width: 100%;
 	font-size: 1.1em;
 }
+
+/**************************************
+* Text box
+**************************************/
 
 .field-textBox {
 	-webkit-appearance: none;
@@ -49,10 +66,9 @@
     border: 2px solid #222;
 }
 
-fieldset {
-	border: none;
-	padding: 0;
-}
+/**************************************
+* Radio buttons
+**************************************/
 
 .field-radioButton label {
 	padding: 12px;
@@ -62,7 +78,31 @@ fieldset {
     padding: 1.2em;
 }
 
+.field-radioButton input {
+	margin-right: 5px;
+}
+
 .field-radioButton label:hover {
+	background-color: #ddd;
+}
+
+/**************************************
+* Radio buttons
+**************************************/
+
+.field-checkbox label {
+	padding: 12px;
+    background-color: #eee;
+    margin-bottom: 7px;
+    display: block;
+    padding: 1.2em;
+}
+
+.field-checkbox input {
+	margin-right: 5px;
+}
+
+.field-checkbox label:hover {
 	background-color: #ddd;
 }
 
@@ -108,6 +148,6 @@ fieldset {
 }
 
 /**************************************
-* Group
+* Checkboxes
 **************************************/
 
