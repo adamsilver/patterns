@@ -9,7 +9,7 @@ const path = require('path');
  * Require the Fractal module
  */
 const fractal = module.exports = require('@frctl/fractal').create();
-
+const theme = require('./theme/index.js');
 const nunjucks = require('@frctl/nunjucks')();
 
 
@@ -31,6 +31,9 @@ fractal.components.set('default.collated', false);
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set('path', path.join(__dirname, 'docs'));
+
+// theme
+fractal.web.theme(theme);
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
