@@ -1,0 +1,9 @@
+{
+	"title": "Error summary",
+	"context": {
+		"errors": [{
+			"fieldName":"username",
+			"message": "the message"
+		}]
+	}
+}
